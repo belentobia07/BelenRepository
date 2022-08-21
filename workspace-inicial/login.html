@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>eMercado - Todo lo que busques está aquí</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: rgb(248, 249, 250);
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="btn btn-lg" onClick="regresar()">Regresar</button>
+
+    <!-- Inicio de sesion creado con clases de bootstrap -->
+
+    <main class="pb-5">
+      <div class="container">
+        <div class="text-center justify-content-align-center">
+          <div class="row">
+            <div class="img">
+              <img src="./img/login.png" alt="login" class="img-fluid" />
+            </div>
+          </div>
+
+          <h2>Inicio de sesión</h2>
+          <br />
+
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="cols-1 align-content-center">
+              <div class="row">
+                <label for="email">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" required />
+                <div class="invalid-feedback">Ingrese email.</div>
+              </div>
+              <br />
+              <div class="row">
+                <label for="pas">Contraseña</label>
+                <input type="password" class="form-control" id="pas" required />
+                <div class="invalid-feedback">Ingrese contraseña</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="text-center p-4">
+                <button class="btn btn-primary btn-lg" type="submit">
+                  Ingresar
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Fin de inicio de sesión -->
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-end">
+          <a href="#">Volver arriba</a>
+        </p>
+        <p>
+          Este sitio forma parte de
+          <a href="https://jovenesaprogramar.edu.uy/" target="_blank"
+            >Jovenes a Programar</a
+          >
+          - 2022
+        </p>
+        <p>
+          Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la
+          letra del obligatorio.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>
