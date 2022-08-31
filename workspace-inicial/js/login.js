@@ -1,3 +1,5 @@
+
+
 function regresar() {
     window.location.href = "index.html"
 }
@@ -11,25 +13,32 @@ function regresar() {
 
 
 
-    Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
 
-                }
-                form.classList.add('was-validated')
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                submit = false;
 
-
-
-            }, false)
+            }
+            form.classList.add('was-validated')
 
 
-        })
+
+
+
+        }, false)
+
+
+    })
+
+
+
 
 
 
 })()
+
 
 

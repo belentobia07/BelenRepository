@@ -1,4 +1,6 @@
-const URL = "https://japceibal.github.io/emercado-api/cats_products/101.json"
+let catId = localStorage.getItem('catID')
+
+const URL = PRODUCTS_URL + catId + EXT_TYPE;
 
 
 function showCarsList(productsArray) {
@@ -7,7 +9,7 @@ function showCarsList(productsArray) {
     let htmlContentToAppend = ` <div class="text-center p-4">
     <h2>Productos</h2>
     <p class="lead">
-      Verás aquí todos los productos de la categoría ${productsArray.catName}.
+      Verás aquí todos los productos de la categoría <b>${productsArray.catName}</b>.
     </p>
   </div>`;
 
