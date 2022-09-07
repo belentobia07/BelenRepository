@@ -48,7 +48,106 @@
       </div>
     </nav>
     <main class="pb-5 container">
-      <div class="container" id="cars"></div>
+      <div class="text-center p-4">
+        <h2>Productos</h2>
+        <p class="lead">
+          Verás aquí todos los productos de la categoría <b id="prodName"></b>
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col text-end">
+            <div
+              class="btn-group btn-group-toggle mb-4"
+              data-bs-toggle="buttons"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="options"
+                id="sortDescPr"
+              />
+              <label class="btn btn-light" for="sortDescPr"
+                ><i class="fas fa-sort-amount-down mr-1"></i>$</label
+              >
+              <input
+                type="radio"
+                class="btn-check"
+                name="options"
+                id="sortAscPr"
+              />
+              <label class="btn btn-light" for="sortAscPr"
+                ><i class="fas fa-sort-amount-up mr-1"></i>$</label
+              >
+              <input
+                type="radio"
+                class="btn-check"
+                name="options"
+                id="sortDescRel"
+                checked
+              />
+              <label class="btn btn-light" for="sortDescRel"
+                ><i class="fas fa-sort-amount-down mr-1"></i>Rel</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 offset-lg-2 col-md-12 mb-1 container">
+            <div class="row container p-0 m-0">
+              <div class="col-4">
+                <div class="input-group rounded">
+                  <input
+                    id="searchValue"
+                    type="search"
+                    class="form-control rounded"
+                    placeholder="Search"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+                  />
+                  <span class="input-group-text border-0" id="search-addon">
+                    <i class="fas fa-search" id="search"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="col">
+                <p class="font-weight-normal text-end my-2">Precio</p>
+              </div>
+              <div class="col">
+                <input
+                  class="form-control"
+                  type="number"
+                  placeholder="min."
+                  id="rangeFilterCountMin"
+                />
+              </div>
+              <div class="col">
+                <input
+                  class="form-control"
+                  type="number"
+                  placeholder="máx."
+                  id="rangeFilterCountMax"
+                />
+              </div>
+
+              <div class="col-3 p-0">
+                <div class="btn-group" role="group">
+                  <button class="btn btn-light btn-block" id="rangeFilterCount">
+                    Filtrar
+                  </button>
+                  <button class="btn btn-link btn-sm" id="clearRangeFilter">
+                    Limpiar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container" id="cars"></div>
+        </div>
+      </div>
     </main>
     <footer class="text-muted">
       <div class="container">
